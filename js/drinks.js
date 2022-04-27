@@ -170,8 +170,56 @@ const bebidas = [
         ],
         [
             {
-                title:'Dom Bré',
+                title:'Cachaça da Roça',
+                price: 'R$7,00'
+            },
+            {
+                title:'Salinas / Seleta',
                 price: 'R$9,50'
+            },
+            {
+                title:'Dom Bré',
+                price: 'R$14,00'
+            },
+            {
+                title:'Tequila José Cuervo',
+                price: 'R$19,50'
+            },
+            {
+                title:'Vodka Attas',
+                price: 'R$14,00'
+            },
+            {
+                title:'Vodka Absolut',
+                price: 'R$19,80'
+            },
+            {
+                title:'Gin Tanqueray',
+                price: 'R$24,50'
+            },
+            {
+                title:'Gin Ivy',
+                price: 'R$14,80'
+            },
+            {
+                title:'Campari',
+                price: 'R$12,50'
+            },
+            {
+                title:'Rum Bacardi',
+                price: 'R$12,50'
+            },
+            {
+                title:'Johnny Walker Red Label',
+                price: 'R$20,90'
+            },
+            {
+                title:'Johnny Walker Black Label',
+                price: 'R$26,50'
+            },
+            {
+                title:'Jack Daniel\'s',
+                price: 'R$26,50'
             }
 
         ],
