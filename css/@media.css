@@ -1,14 +1,20 @@
-@media (min-width: 429px) {
+@media (min-width: 429px) and (orientation: landscape) {
     .article.top {
-        height:50vh;
+        height:70vh;
         
     }
     nav {
-        height:25vh;
+        height:35vh;
+    }
+    header {
+        height: 13vh;
     }
 
-
 }
+
+
+
+
 /* 
 @media (min-width: 429px) {
     nav {
