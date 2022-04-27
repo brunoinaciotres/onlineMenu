@@ -1,3 +1,7 @@
 .menu-icon {
     width:25px;
 }
+
+.menu-icon.cocktail {
+    width:40px;
+}
