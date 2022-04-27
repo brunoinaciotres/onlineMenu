@@ -1,0 +1,7 @@
+.menu-section {
+    box-sizing:border-box;
+    padding: 20px;
+    width:100%;
+    /* background: lightgreen; */
+    position: relative;
+}

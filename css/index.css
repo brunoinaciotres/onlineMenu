@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url(reset.css);
+@import url(center.css);
+@import url(header.css);
+@import url(logo-div.css);
+@import url(logo.css);
+@import url(article.css);
+@import url(article-img-div.css);
+@import url(promo-img.css);
+@import url(slide-circles.css);
+@import url(nav.css);
+@import url(nav-p-div.css);
+@import url(nav-p.css);
+@import url(nav-ul.css);
+@import url(nav-a.css);
+@import url(nav-div.css);
+@import url(menu-section.css);
+@import url(menu-section-title.css);
+@import url(products-title.css);
+@import url(menu-icon.css);
+@import url(product-item.css);
+@import url(title-description-container.css);
+@import url(products-ul.css);
+@import url(price.css);
+@import url(@media.css);
+html {
+    font-family: 'Montserrat', sans-serif;
+    background: #f8f8ff;
+}
+
+
+

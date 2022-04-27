@@ -1,0 +1,10 @@
+.menu-section-title {
+    position: absolute;
+    top: calc(-56px / 2);
+    padding:20px 30px;
+    border-radius: 7px;
+    width:80px;
+    color:white;
+    background: linear-gradient(to left, #b61b2c, #9b1422);
+    font-weight:600;
+}

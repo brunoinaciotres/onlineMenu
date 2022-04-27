@@ -1,0 +1,7 @@
+.logo-div {
+    height: 100%;
+    width: 80%;
+    max-width: calc(.8 * 425px);
+    margin: 0 auto;
+    
+}

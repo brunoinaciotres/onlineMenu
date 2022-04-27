@@ -1,0 +1,8 @@
+.nav-p {
+    color: #716046;
+    font-weight: 700;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}

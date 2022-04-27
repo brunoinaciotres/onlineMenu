@@ -1,0 +1,6 @@
+.article-img-div {
+    width: 50%;
+    max-width: calc(.5 * 425px);
+    min-width: calc(.5 * 400px);
+    height: auto;
+}
