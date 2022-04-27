@@ -177,17 +177,34 @@ const bebidas = [
         ],
         [
             {
+                title: 'Caipirinha',
+                price: 'R$18,00'
+            },
+            {
+                title: 'Caipivodka',
+                price: 'R$22,00'
+            },
+            {
+                title: 'Caipigin',
+                price: 'R$24,00'
+            },
+            {
                 title: 'Sex On The Beach',
-                price: 'R$16,80'
+                price: 'R$20,00'
+            },
+            {
+                title: 'Piña Colada',
+                price: 'R$26,00'
             },
             {
                 title: 'Mojito',
-                price: 'R$15,80'
+                price: 'R$24,00'
             },
             {
-                title: 'Caipirinha',
-                price: 'R$14,90'
-            }
+                title: 'Margarita',
+                price: 'R$22,00'
+            },
+            
         ],
     
 ]

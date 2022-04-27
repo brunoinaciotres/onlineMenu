@@ -4,9 +4,8 @@ import {bebidas} from './drinks.js'
 
 const ulCervejas = document.querySelector('#cervejas')
 const ulChopps = document.querySelector('#chopps')
+const ulCoqueteis = document.querySelector('#coqueteis')
 
-
-// body.appendChild(article)
 
 for (let i = 0; i < bebidas[1].length; i++) {
     createLiCervejas(i)
@@ -14,6 +13,10 @@ for (let i = 0; i < bebidas[1].length; i++) {
 
 for (let i = 0; i < bebidas[2].length; i++) {
     createLiChopps(i)
+}
+
+for (let i = 0; i < bebidas[4].length; i++) {
+    createLiCoqueteis(i)
 }
 
 
@@ -58,6 +61,27 @@ function createLiChopps(i) {
     
     ulChopps.appendChild(li)
 }
+
+
+function createLiCoqueteis(i) {
+    const h4 = document.createElement('h4')
+    h4.classList.add('title-description-container', 'h4')
+    const titleDescriptionContainer = document.createElement('div')
+    titleDescriptionContainer.classList.add('title-description-container', 'center')
+    const price = document.createElement('div')
+    price.classList.add('price', 'center')
+    const li = document.createElement('li')
+    li.classList.add('product-item')
+    titleDescriptionContainer.appendChild(h4)
+    li.appendChild(titleDescriptionContainer)
+    li.appendChild(price)
+
+    h4.innerText = bebidas[4][i].title
+    price.innerText = bebidas[4][i].price
+
+    ulCoqueteis.appendChild(li)
+}
+
 
 
 
