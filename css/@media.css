@@ -9,7 +9,9 @@
     header {
         height: 13vh;
     }
-
+    .nav-ul {
+        height: 80px;
+    }
 }
 
 
