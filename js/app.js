@@ -6,7 +6,12 @@ const ulCervejas = document.querySelector('#cervejas')
 const ulChopps = document.querySelector('#chopps')
 const ulCoqueteis = document.querySelector('#coqueteis')
 const ulAperitivos = document.querySelector('#aperitivos')
+const ulBebidas = document.querySelector('#bebidas')
 
+
+for (let i = 0; i < bebidas[0].length; i++) {
+    createLiBebidas(i)
+}
 
 for (let i = 0; i < bebidas[1].length; i++) {
     createLiCervejas(i)
@@ -32,7 +37,7 @@ function createLiCervejas (i){
     h4.classList.add('title-description-container', 'h4')
     const span = document.createElement('span')
     const titleDescriptionContainer = document.createElement('div')
-    titleDescriptionContainer.classList.add('title-description-container', 'center')
+    titleDescriptionContainer.classList.add('title-description-container', 'center', 'column', 'align-items-flex-start')
     const price = document.createElement('div')
     price.classList.add('price', 'center')
     const li = document.createElement('li')
@@ -106,12 +111,31 @@ function createLiAperitivos(i) {
     ulAperitivos.appendChild(li)
 }
 
+function createLiBebidas(i){
+    const h4 = document.createElement('h4')
+    h4.classList.add('title-description-container', 'h4')
+    const span = document.createElement('span')
+    const titleDescriptionContainer = document.createElement('div')
+    titleDescriptionContainer.classList.add('title-description-container', 'center', 'column', 'align-items-flex-start')
+    const price = document.createElement('div')
+    price.classList.add('price', 'center')
+    const li = document.createElement('li')
+    li.classList.add('product-item')
+    titleDescriptionContainer.appendChild(h4)
+    titleDescriptionContainer.appendChild(span)
+    li.appendChild(titleDescriptionContainer)
+    li.appendChild(price)
+
+    h4.innerText = bebidas[0][i].title
+    span.innerText = bebidas[0][i].desc
+    price.innerText = bebidas[0][i].price
+
+    ulBebidas.appendChild(li)
+}
+
 
 const expandButton = document.querySelectorAll('.expand-button')
 const productsUl = Array.from(document.querySelectorAll('.products-ul'))
-const arrowIcon = document.querySelector('.arrow-icon')
-const plusIcon = document.querySelector('.plus-icon')
-
 
 
 expandButton.forEach( button => {
@@ -128,24 +152,22 @@ expandButton.forEach( button => {
         //evita abrir todos
         switch(event.target.getAttribute('id')){
             case 'expand-cervejas':
-                for (let i = 0; i<productsUl.length; i++){
+               
+            for (let i = 0; i<productsUl.length; i++){
                     if(productsUl[i].getAttribute('id') == 'cervejas') {
                         productsUl[i].classList.toggle('height')
-    
                     }
-   
                 }
-
                 break
+
             case 'expand-coqueteis':
                 for (let i = 0; i<productsUl.length; i++){
                     if(productsUl[i].getAttribute('id') == 'coqueteis') {
                         productsUl[i].classList.toggle('height')
                     }
-   
                 }
                 break
-                
+        
         }
     })
 });

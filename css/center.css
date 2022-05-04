@@ -7,3 +7,6 @@
 .center.column {
     flex-direction: column;
 }
+.center.align-items-flex-start {
+    align-items: flex-start;
+}

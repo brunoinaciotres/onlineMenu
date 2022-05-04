@@ -87,7 +87,7 @@
 //         },
 //         sucoDelValle: {
 //             title: 'Suco Del Valle',
-//             desc: 'Verificar sabores disponíveis',
+//             desc: 'Verificar sabores',
 //             price: 'R$8,50'
 //         },
 //         h2oh: {
@@ -102,7 +102,7 @@
 //         },
 //         redBull: {
 //             title: 'Red Bull',
-//             desc: 'Verificar sabores disponíveis',
+//             desc: 'Verificar sabores ',
 //             price: 'R$15,90'
 //         },
 //     }
@@ -113,8 +113,50 @@ const bebidas = [
         [
             {
                 title: 'Refrigerante',
-                price: 'R$5,90'
+                price: 'R$5,90',
+                desc: '350ml'
+            },
+            {
+                title: 'Água',
+                price: 'R$4,00',
+                desc: 'Sem Gás'
+            },
+            {
+                title: 'Água',
+                price: 'R$4,50',
+                desc: 'Com Gás'
+            },
+            {
+                title: 'Suco Natural',
+                price: 'R$8,90',
+                desc: 'Verificar frutas'
+            },
+            {
+                title: 'Limonada Suíça',
+                price: 'R$9,50',
+                desc: 'Cremosa ou não'
+            },
+            {
+                title: 'Suco Del Valle',
+                price: 'R$8,50',
+                desc: 'Verificar sabores'
+            },
+            {
+                title: 'H2OH',
+                price: 'R$8,80',
+                desc: 'Limão ou Limoneto'
+            },
+            {
+                title: 'Schweppes',
+                price: 'R$8,50',
+                desc: 'Citrus ou Tônica'
+            },
+            {
+                title: 'Red Bull',
+                desc: 'Verificar sabores',
+                price: 'R$15,90'
             }
+            
         ],
         [
             
