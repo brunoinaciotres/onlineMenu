@@ -112,17 +112,30 @@ const productsUl = Array.from(document.querySelectorAll('.products-ul'))
 const arrowIcon = document.querySelector('.arrow-icon')
 const plusIcon = document.querySelector('.plus-icon')
 
+
+
 expandButton.forEach( button => {
     button.addEventListener('click', (event) => {
+        
+        //troca icone
+        let buttons = Array.from(event.target.childNodes)
+        buttons.forEach(btn => {
+            if(btn.classList){
+                btn.classList.toggle('display-none')
+            }
+        })
+        
+        //evita abrir todos
         switch(event.target.getAttribute('id')){
             case 'expand-cervejas':
                 for (let i = 0; i<productsUl.length; i++){
                     if(productsUl[i].getAttribute('id') == 'cervejas') {
                         productsUl[i].classList.toggle('height')
-                        
+    
                     }
    
                 }
+
                 break
             case 'expand-coqueteis':
                 for (let i = 0; i<productsUl.length; i++){
