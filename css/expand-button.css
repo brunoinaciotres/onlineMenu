@@ -1,21 +1,27 @@
+.expand-button-div {
+    position:relative;
+    width:100%;
+}
+
+
 .expand-button {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
     border-radius: 50%;
     background: #5a4a30;
     text-align: center;
     /* border-radius: 0 0 10px 10px; */
     box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
-    margin: 0 10px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
+ 
 
 .expand-button:hover {
     background: #4a3c26;
+
 }
 
 
@@ -25,4 +31,6 @@
     top:50%;
     transform: translateY(-50%);
     pointer-events: none;
+    width: 20px;
+    height: 20px;
 }

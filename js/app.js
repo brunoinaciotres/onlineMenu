@@ -151,22 +151,22 @@ expandButton.forEach( button => {
         
         //evita abrir todos
         switch(event.target.getAttribute('id')){
-            case 'expand-cervejas':
-               
-            for (let i = 0; i<productsUl.length; i++){
-                    if(productsUl[i].getAttribute('id') == 'cervejas') {
-                        productsUl[i].classList.toggle('height')
-                    }
-                }
-                break
 
-            case 'expand-coqueteis':
+            case 'expand-bebidas':
                 for (let i = 0; i<productsUl.length; i++){
-                    if(productsUl[i].getAttribute('id') == 'coqueteis') {
+                    if(productsUl[i].getAttribute('id') == 'bebidas') {
                         productsUl[i].classList.toggle('height')
                     }
                 }
                 break
+            
+                case 'expand-aperitivos':
+                    for (let i = 0; i<productsUl.length; i++){
+                        if(productsUl[i].getAttribute('id') == 'aperitivos') {
+                            productsUl[i].classList.toggle('height')
+                        }
+                    }
+                    break
         
         }
     })
