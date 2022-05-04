@@ -1,3 +1,9 @@
+.products-ul {
+    
+    overflow: hidden;
+    padding: 10px;
+}
+
 .products-ul.vertical {
     display: flex;
     justify-content: space-between;

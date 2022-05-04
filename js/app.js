@@ -107,6 +107,49 @@ function createLiAperitivos(i) {
 }
 
 
+const expandButton = document.querySelectorAll('.expand-button')
+const productsUl = Array.from(document.querySelectorAll('.products-ul'))
+const arrowIcon = document.querySelector('.arrow-icon')
+const plusIcon = document.querySelector('.plus-icon')
+
+expandButton.forEach( button => {
+    button.addEventListener('click', (event) => {
+        switch(event.target.getAttribute('id')){
+            case 'expand-cervejas':
+                for (let i = 0; i<productsUl.length; i++){
+                    if(productsUl[i].getAttribute('id') == 'cervejas') {
+                        productsUl[i].classList.toggle('height')
+                        
+                    }
+   
+                }
+                break
+            case 'expand-coqueteis':
+                for (let i = 0; i<productsUl.length; i++){
+                    if(productsUl[i].getAttribute('id') == 'coqueteis') {
+                        productsUl[i].classList.toggle('height')
+                    }
+   
+                }
+                break
+                
+        }
+    })
+});
+
+
+
+function createExpandButton() {
+    const menuSection = document.querySelector('.menu-section')
+
+    const expandButtonDiv = document.createElement('div')
+    expandButtonDiv.classList.add('expand-button')
+
+    const plusIcon = document.createElement('i')
+    plusIco.setAttribute
+    const arrowIcon = document.createElement('i')
+}
+
 
 
 

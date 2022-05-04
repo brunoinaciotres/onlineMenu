@@ -23,6 +23,9 @@
 @import url(products-ul.css);
 @import url(price.css);
 @import url(@media.css);
+@import url(expand-button.css);
+@import url(height.css);
+@import url(display-none.css);
 
 html {
     font-family: 'Montserrat', sans-serif;
